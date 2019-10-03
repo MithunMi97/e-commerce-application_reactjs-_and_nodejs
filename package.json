@@ -1,17 +1,27 @@
 {
-    "name": "ecommerce",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "start": "nodemon app.js"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "dotenv": "^8.1.0",
-        "express": "^4.17.1",
-        "nodemon": "^1.19.2"
-    }
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.3",
+    "nodemon": "^1.19.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MithunMi97/e-commerce-application_reactjs_and_nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MithunMi97/e-commerce-application_reactjs_and_nodejs/issues"
+  },
+  "homepage": "https://github.com/MithunMi97/e-commerce-application_reactjs_and_nodejs#readme"
 }
