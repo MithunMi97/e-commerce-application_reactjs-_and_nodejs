@@ -45,7 +45,6 @@ const Signup = () => {
                     onChange={handleChange("name")}
                     type="text"
                     className="form-control"
-                    placeholder="Enter Name"
                     value={name}
                 />
             </div>
@@ -56,7 +55,6 @@ const Signup = () => {
                     onChange={handleChange("email")}
                     type="email"
                     className="form-control"
-                    placeholder="Enter Email Address"
                     value={email}
                 />
             </div>
@@ -67,7 +65,6 @@ const Signup = () => {
                     onChange={handleChange("password")}
                     type="password"
                     className="form-control"
-                    placeholder="Enter Password"
                     value={password}
                 />
             </div>

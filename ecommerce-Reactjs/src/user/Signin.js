@@ -1,18 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Redirect } from "react-router-dom";
 import Layout from "../core/Layout";
-import { signin, authenticate } from "../auth";
+import { signin, authenticate, isAuthenticated } from "../auth";
 
 const Signin = () => {
     const [values, setValues] = useState({
-        email: "",
-        password: "",
+        email: "ryan@gmail.com",
+        password: "rrrrrr9",
         error: "",
         loading: false,
         redirectToReferrer: false
     });
 
     const { email, password, loading, error, redirectToReferrer } = values;
+    const { user } = isAuthenticated();
 
     const handleChange = name => event => {
         setValues({ ...values, error: false, [name]: event.target.value });
@@ -43,7 +44,6 @@ const Signin = () => {
                     onChange={handleChange("email")}
                     type="email"
                     className="form-control"
-                    placeholder="Enter Email Address"
                     value={email}
                 />
             </div>
@@ -54,7 +54,6 @@ const Signin = () => {
                     onChange={handleChange("password")}
                     type="password"
                     className="form-control"
-                    placeholder="Enter Password"
                     value={password}
                 />
             </div>
@@ -82,6 +81,13 @@ const Signin = () => {
 
     const redirectUser = () => {
         if (redirectToReferrer) {
+            if (user && user.role === 1) {
+                return <Redirect to="/admin/dashboard" />;
+            } else {
+                return <Redirect to="/user/dashboard" />;
+            }
+        }
+        if (isAuthenticated()) {
             return <Redirect to="/" />;
         }
     };
