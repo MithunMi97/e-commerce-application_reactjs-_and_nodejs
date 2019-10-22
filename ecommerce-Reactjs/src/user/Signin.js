@@ -5,8 +5,8 @@ import { signin, authenticate, isAuthenticated } from "../auth";
 
 const Signin = () => {
     const [values, setValues] = useState({
-        email: "ryan@gmail.com",
-        password: "rrrrrr9",
+        email: "",
+        password: "",
         error: "",
         loading: false,
         redirectToReferrer: false
@@ -42,7 +42,8 @@ const Signin = () => {
                 <label className="text-muted">Email</label>
                 <input
                     onChange={handleChange("email")}
-                    type="email"
+                    type="email" 
+                    placeholder="Enter E-mail Please"
                     className="form-control"
                     value={email}
                 />
@@ -53,6 +54,7 @@ const Signin = () => {
                 <input
                     onChange={handleChange("password")}
                     type="password"
+                    placeholder="Enter Password Please"
                     className="form-control"
                     value={password}
                 />
