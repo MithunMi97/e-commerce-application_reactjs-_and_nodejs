@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/e-commerce-application_reactjs_and_nodejs/static/css/main.801ac66d.chunk.css",
+    "main.js": "/e-commerce-application_reactjs_and_nodejs/static/js/main.253ce527.chunk.js",
+    "main.js.map": "/e-commerce-application_reactjs_and_nodejs/static/js/main.253ce527.chunk.js.map",
+    "runtime~main.js": "/e-commerce-application_reactjs_and_nodejs/static/js/runtime~main.6b6feec4.js",
+    "runtime~main.js.map": "/e-commerce-application_reactjs_and_nodejs/static/js/runtime~main.6b6feec4.js.map",
+    "static/js/2.45fac519.chunk.js": "/e-commerce-application_reactjs_and_nodejs/static/js/2.45fac519.chunk.js",
+    "static/js/2.45fac519.chunk.js.map": "/e-commerce-application_reactjs_and_nodejs/static/js/2.45fac519.chunk.js.map",
+    "index.html": "/e-commerce-application_reactjs_and_nodejs/index.html",
+    "precache-manifest.1e9a37f0740ecf031689e227f18b1d92.js": "/e-commerce-application_reactjs_and_nodejs/precache-manifest.1e9a37f0740ecf031689e227f18b1d92.js",
+    "service-worker.js": "/e-commerce-application_reactjs_and_nodejs/service-worker.js",
+    "static/css/main.801ac66d.chunk.css.map": "/e-commerce-application_reactjs_and_nodejs/static/css/main.801ac66d.chunk.css.map"
+  }
+}
